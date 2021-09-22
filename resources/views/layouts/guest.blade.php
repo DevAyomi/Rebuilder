@@ -12,6 +12,14 @@
 
         <!-- Styles -->
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+        <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+        <link href="{{  asset('backend/css/bootstrap.css') }}" rel='stylesheet' type='text/css' />
+        <!-- Custom Theme files -->
+        <link href="{{ asset('/backend/css/style.css') }}" rel='stylesheet' type='text/css' />
+        <script src="{{ asset('backend/js/jquery.min.js') }}"> </script>
+        <!--webfonts-->
+        <link href='http://fonts.googleapis.com/css?family=Poiret+One|Open+Sans:400italic,600italic,400,300,600,700' rel='stylesheet' type='text/css'>
+
 
         <!-- Scripts -->
         <script src="{{ mix('js/app.js') }}" defer></script>

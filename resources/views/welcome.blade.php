@@ -22,7 +22,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="header-top">
 			<div class="container">
 				<div class="logo">
-					<a href="index.html"><h1>TD<span>RM</span></h1></a>
+					<a href="{{url('/')}}"><h1>TD<span>RM</span></h1></a>
 				</div>
 				<div class="do-button">
 					<ul class="f-icons">
@@ -38,12 +38,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<span class="menu"></span>
 				<div class="top-menu">
 				<ul class="cl-effect-16">
-						<li><a class="active" href="index.html" data-hover="HOME">Dashboard</a></li>
+						<li><a class="active" href="{{url('/')}}" data-hover="HOME">Dashboard</a></li>
 						<li><a href="about.html" data-hover="About">About</a></li>
 						<li><a href="typography.html" data-hover="SERVICES">SERVICES</a></li>
 						<li><a href="gallery.html" data-hover="Gallery">Gallery</a></li>
 						<li><a href="blog.html" data-hover="BLOG">BLOG</a></li>
 						<li><a href="contact.html" data-hover="CONTACT">Contact</a></li>
+                        <li><a href="{{url('/register')}}" data-hover="REGISTER">Register</a></li>
+                        <li><a href="{{url('/login')}}" data-hover="LOGIN">Login</a></li>
 						<div class="clearfix"> </div>
 					</ul>
 				</div>

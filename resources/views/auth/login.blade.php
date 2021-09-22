@@ -1,7 +1,9 @@
 <x-guest-layout>
     <x-jet-authentication-card>
         <x-slot name="logo">
-            <x-jet-authentication-card-logo />
+            <div class="logo">
+                <a href="{{url('/')}}"><h1>TD<span>RM</span></h1></a>
+            </div>
         </x-slot>
 
         <x-jet-validation-errors class="mb-4" />
@@ -26,11 +28,20 @@
             </div>
 
             <div class="block mt-4">
-                <label for="remember_me" class="flex items-center">
-                    <x-jet-checkbox id="remember_me" name="remember" />
-                    <span class="ml-2 text-sm text-gray-600">{{ __('Remember me') }}</span>
-                </label>
+               <div class="row">
+                <div class="col-sm-6 col-xs-6">
+                    <label for="remember_me" class="flex items-center">
+                        <x-jet-checkbox id="remember_me" name="remember" />
+                        <span class="ml-2 text-sm text-gray-600">{{ __('Remember me') }}</span>
+                    </label>
+                   </div>
+                    <div class="col-sm-6 col-xs-6">
+                      <p><a href="{{ url('/register') }}" style="color: blue;">Not Registered?</a></p>
+                    </div>
+               </div>
             </div>
+
+
 
             <div class="flex items-center justify-end mt-4">
                 @if (Route::has('password.request'))
