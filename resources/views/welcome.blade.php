@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Divine Rebuilder | Home Page </title>
+<title>Divine Rebuilder | Dashboard Page </title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Generous Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
@@ -38,7 +38,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<span class="menu"></span>
 				<div class="top-menu">
 				<ul class="cl-effect-16">
-						<li><a class="active" href="index.html" data-hover="HOME">Home</a></li>
+						<li><a class="active" href="index.html" data-hover="HOME">Dashboard</a></li>
 						<li><a href="about.html" data-hover="About">About</a></li>
 						<li><a href="typography.html" data-hover="SERVICES">SERVICES</a></li>
 						<li><a href="gallery.html" data-hover="Gallery">Gallery</a></li>
@@ -323,7 +323,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 	</div>
 	<!-- banner-text Slider starts Here -->
-		<script src="js/responsiveslides.min.js"></script>
+		<script src="{{ asset('backend/js/responsiveslides.min.js')}}"></script>
 		<script>
 			// You can also use "$(window).load(function() {"
 				$(function () {
@@ -419,7 +419,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								 		};
 										*/
 
-										$().UItoTop({ easingType: 'easeOutQuart' });
 
 									});
 								</script>
